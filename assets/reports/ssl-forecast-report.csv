@@ -1,0 +1,5 @@
+CommonName,Issuer,Expires,DaysRemaining,Owner,Status
+portal.bayouops-demo.local,BayouOps Demo Issuing CA 02,2026-09-18T23:59:59-05:00,115,web-platform,Healthy
+pay-api.bayouops-demo.local,BayouOps Demo Issuing CA 02,2026-06-13T23:59:59-05:00,18,payments,Renewal Due
+vpn.bayouops-demo.local,BayouOps Demo Issuing CA 01,2026-06-02T23:59:59-05:00,7,network,Urgent
+finance.bayouops-demo.local,BayouOps Demo Issuing CA 01,2026-05-21T23:59:59-05:00,-5,finance-apps,Expired

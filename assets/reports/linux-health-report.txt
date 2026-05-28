@@ -1,0 +1,12 @@
+BayouOps Suite Pro - Linux Health Evidence Report
+Generated: 2026-05-26T14:30:00-05:00
+Classification: DEMO_SYNTHETIC_NO_CUSTOMER_DATA
+
+Hostname           OS                         Packages  Reboot  Disk  FailedSvc  Risk
+BOU-LNX-WEB-01     Ubuntu Server 24.04.2 LTS         3  false    61%          0  Healthy
+BOU-LNX-WEB-02     Ubuntu Server 24.04.2 LTS        17  true     72%          0  Medium
+PAY-LNX-API-01     Red Hat Enterprise Linux 9        6  false    68%          0  Healthy
+PAY-LNX-API-02     Red Hat Enterprise Linux 9       42  true     86%          1  Medium
+FIN-LNX-JOBS-01    Oracle Linux Server 8.10         91  true     93%          2  Critical
+
+Operator note: all records are synthetic demo data. No customer hosts or credentials are represented.

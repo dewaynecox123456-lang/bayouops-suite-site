@@ -1,0 +1,6 @@
+Hostname,OS,Owner,InstalledKBs,MissingKBs,RebootPending,Readiness
+BOU-DC-01,Windows Server 2022 Datacenter,identity,KB5060842;KB5060998,,false,Ready
+BOU-FS-02,Windows Server 2022 Standard,file-services,KB5060842,,true,Ready With Reboot
+RTL-POS-DB-01,Windows Server 2019 Standard,retail-systems,KB5059981,KB5060842,true,Owner Review
+FIN-SQL-01,Windows Server 2016 Datacenter,database-services,KB5055523,KB5061010;KB5060998,true,Blocked
+BOU-LEGACY-01,Windows Server 2012 R2,shared-services,KB5031407,KB5060842,false,Blocked

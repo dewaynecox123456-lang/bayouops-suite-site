@@ -97,6 +97,50 @@ h2 {
   font-weight: 800;
 }
 
+.report-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.report-card {
+  min-height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  background: rgba(13, 27, 46, .9);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.4rem;
+}
+
+.report-card h3 {
+  margin: 0 0 .75rem;
+  font-size: 1.15rem;
+  line-height: 1.25;
+}
+
+.report-card p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.report-card .report-file {
+  margin-top: .9rem;
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+  font-size: .78rem;
+  overflow-wrap: anywhere;
+}
+
+.report-button {
+  width: 100%;
+  text-align: center;
+}
+
 footer {
   color: var(--muted);
   text-align: center;
@@ -258,5 +302,15 @@ body.lightbox-open {
 
   .lightbox-next {
     grid-column: 2;
+  }
+}
+
+@media (max-width: 520px) {
+  .report-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .report-card {
+    min-height: auto;
   }
 }
