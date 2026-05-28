@@ -97,6 +97,10 @@ h2 {
   font-weight: 800;
 }
 
+.compact-grid .card {
+  min-height: 7rem;
+}
+
 .workflow-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -161,6 +165,46 @@ h2 {
   margin-right: .5rem;
   border-radius: 999px;
   background: var(--accent);
+  vertical-align: .1rem;
+}
+
+.next-actions {
+  margin-top: 1rem;
+  background: rgba(13, 27, 46, .72);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+
+.next-actions h3 {
+  margin: 0 0 1rem;
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+
+.next-actions ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .65rem 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.next-actions li {
+  color: var(--muted);
+  font-size: .98rem;
+  line-height: 1.45;
+}
+
+.next-actions li::before {
+  content: "";
+  display: inline-block;
+  width: .42rem;
+  height: .42rem;
+  margin-right: .55rem;
+  border: 1px solid rgba(100, 210, 255, .6);
+  border-radius: 999px;
   vertical-align: .1rem;
 }
 
@@ -356,6 +400,10 @@ body.lightbox-open {
 
   .workflow-card {
     min-height: auto;
+  }
+
+  .next-actions ul {
+    grid-template-columns: 1fr;
   }
 
   .lightbox {
